@@ -1,3 +1,268 @@
-this is local machine ....
-This is very easy
-ammy amyy ammy 
+
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDAC Website</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f9;
+        }
+
+        header {
+            background-color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            color: #003366;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: #e67e22;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin: 10px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #e67e22;
+        }
+
+        .hero {
+            background: linear-gradient(
+                rgba(0, 40, 90, 0.85),
+                rgba(0, 40, 90, 0.85)
+            ), #003366;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #e67e22;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background-color: #cf6710;
+        }
+
+        .section {
+            padding: 50px 8%;
+            text-align: center;
+        }
+
+        .section h2 {
+            color: #003366;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .section p {
+            color: #555;
+            line-height: 1.7;
+        }
+
+        .courses {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .course {
+            background-color: white;
+            padding: 25px;
+            width: 280px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px #ddd;
+        }
+
+        .course h3 {
+            color: #003366;
+            margin-bottom: 15px;
+        }
+
+        .course p {
+            margin-bottom: 20px;
+        }
+
+        .course a {
+            color: #e67e22;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .about {
+            background-color: white;
+        }
+
+        .contact {
+            background-color: #e9eef5;
+        }
+
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                justify-content: center;
+                gap: 15px;
+            }
+
+            nav {
+                text-align: center;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 8px;
+            }
+
+            .hero h1 {
+                font-size: 30px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .course {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">C-DAC<span>.</span></div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#courses">Courses</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>Welcome to C-DAC</h1>
+
+        <p>
+            Centre for Development of Advanced Computing<br>
+            Empowering students through advanced technology and education.
+        </p>
+
+        <a href="#courses" class="btn">Explore Courses</a>
+    </section>
+
+    <section class="section about" id="about">
+        <h2>About C-DAC</h2>
+
+        <p>
+            C-DAC is an Indian research and development organization
+            working in advanced computing, information technology,
+            high-performance computing, and related fields.
+            It also provides advanced training programs for students
+            and professionals.
+        </p>
+    </section>
+
+    <section class="section" id="courses">
+        <h2>Our Courses</h2>
+
+        <div class="courses">
+
+            <div class="course">
+                <h3>PG-DAC</h3>
+                <p>
+                    Post Graduate Diploma in Advanced Computing.
+                    Learn programming, software development, and databases.
+                </p>
+                <a href="#contact">Learn More</a>
+            </div>
+
+            <div class="course">
+                <h3>PG-DBDA</h3>
+                <p>
+                    Post Graduate Diploma in Big Data Analytics.
+                    Learn data processing, analytics, and related technologies.
+                </p>
+                <a href="#contact">Learn More</a>
+            </div>
+
+            <div class="course">
+                <h3>PG-DITISS</h3>
+                <p>
+                    Post Graduate Diploma in IT Infrastructure,
+                    Systems and Security.
+                </p>
+                <a href="#contact">Learn More</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section contact" id="contact">
+        <h2>Contact Us</h2>
+
+        <p>For course details and admissions, visit the official C-DAC website.</p>
+
+        <br>
+
+        <a href="https://www.cdac.in/" class="btn" target="_blank">
+            Official CDAC Website
+        </a>
+    </section>
+
+    <footer>
+        <p>© 2026 C-DAC Website Design | Created using HTML and CSS</p>
+    </footer>
+
+</body>
+</html>
+
